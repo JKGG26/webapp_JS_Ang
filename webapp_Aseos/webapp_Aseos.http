@@ -1,0 +1,6 @@
+@webapp_Aseos_HostAddress = http://localhost:5235
+
+GET {{webapp_Aseos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
