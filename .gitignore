@@ -2,19 +2,28 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=csharp,dotnetcore,angular
 
 ### Angular ###
-## Angular ##
 # compiled output
-dist/
-tmp/
-app/**/*.js
-app/**/*.js.map
+*/dist/
+*/tmp/
+*/out-tsc
+*/bazel-out
+*/app/**/*.js
+*/app/**/*.js.map
 
 # dependencies
 node_modules/
 bower_components/
+npm-debug.log
+yarn-error.log
 
 # IDEs and editors
 .idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
 # misc
 .sass-cache/
@@ -437,5 +446,26 @@ obj/
 # Common node modules locations
 /node_modules
 /wwwroot/node_modules
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
 
 # End of https://www.toptal.com/developers/gitignore/api/csharp,dotnetcore,angular
