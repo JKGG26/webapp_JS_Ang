@@ -1,0 +1,11 @@
+.header-container {
+    background-color: #007bff; /* Color de fondo del header (azul) */
+    color: white; /* Color del texto en el header */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del contenido al centro */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2em; /* Tamaño de la fuente del título */
+}
