@@ -14,13 +14,13 @@ export class ProductEditService {
   getProduct(number: number): Observable<any[]>{
     return this.http.get<any[]>(`${this.apiUrl}/Productos/${number}`).pipe(  
       map(response => Array.isArray(response) ? response : [response]),  
-      catchError(this.handleError)  
+      catchError(this.handleError)
     );
   }
 
   updateProduct(number: number, json_data: any){
     this.http.put(`${this.apiUrl}/Productos/${number}`, json_data).subscribe(  
-      response => {  
+      response => {
         console.log('PUT request is successful ', response);  
       },  
       error => {  

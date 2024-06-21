@@ -18,15 +18,17 @@
 }
 
 .table-container {
+    display: flex;
+    padding: 20px;
     margin: 0 auto; /* Centra la tabla horizontalmente */
-    width: 80%; /* Ancho de la tabla */
-    max-width: 800px; /* Ancho máximo para mantener la legibilidad */
+    width: 90%; /* Ancho de la tabla */
+    max-width: 90%; /* Ancho máximo para mantener la legibilidad */
     border-collapse: collapse; /* Combina los bordes de las celdas */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto de elevación */
 }
 
 .table {
-    width: 100%;
+    width: 70%;
     text-align: left; /* Alineación del texto a la izquierda en las celdas */
 }
 
@@ -111,42 +113,45 @@
     background-color: #004380;
 }
 
-.form-container {
-    display: flex;
-    align-items: center;
+.form-container {  
+    display: flex;  
+    flex-direction: row;  
+    align-items: center;  
     justify-content: center;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-}
-
-.form-container data-input {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-}
+    width: 90%;
+    margin: 20px auto;  
+    padding: 20px;  
+    border: 1px solid #ccc;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    background-color: #f9f9f9;  
+}  
   
-  /* Estilos para el label */
- .number-input label {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-  
-/* Estilos para el input */
-.number-input input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+.form-container .data-input {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: flex-start;  
+    margin: 0 20px;  
+    padding: 20px;  
+    border: 1px solid #ccc;  
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    background-color: #f9f9f9;  
+}  
+    
+/* Estilos para el label */  
+.form-container .data-input label {  
+    font-size: 1.2rem;  
+    margin-bottom: 10px;  
+}  
+    
+/* Estilos para el input */  
+.form-container .data-input input[type="number"],   
+.form-container .data-input input[type="text"] {  
+    box-sizing: border-box;  
+    width: 100%;  
+    padding: 10px;  
+    font-size: 1rem;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  

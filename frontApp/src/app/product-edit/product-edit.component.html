@@ -1,4 +1,4 @@
-<h1 class="tittle">Actualizar Producto</h1>
+<h1 class="tittle">Editar Producto</h1>
 <div class="form-container">
     <div class="data-input">
         <label for="id">Id:</label>
@@ -23,6 +23,14 @@
 </div>
 
 <div class="table-container">
+    <div class="number-input">
+        <label for="number">Ingrese el Id del Producto a revisar:</label>
+        <input type="number" id="number" name="number" [(ngModel)]="numberValue">
+        <div class="button-container">
+            <button (click)="sendNumber()">Ver</button>
+            <button (click)="updateProduct()">Editar</button>
+        </div>
+    </div>
     <table class="table">
         <caption>Detalles del Producto</caption>
         <thead>
@@ -44,13 +52,4 @@
             </tr>
         </tbody>
     </table>
-</div>
-
-<div class="number-input">
-    <label for="number">Ingrese el Id del Producto a revisar:</label>
-    <input type="number" id="number" name="number" [(ngModel)]="numberValue">
-    <div class="button-container">
-        <button (click)="sendNumber()">Ver</button>
-        <button (click)="updateProduct()">Editar</button>
-    </div>
 </div>
