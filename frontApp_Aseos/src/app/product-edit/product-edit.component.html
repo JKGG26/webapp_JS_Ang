@@ -1,0 +1,21 @@
+<h2>Editar Producto</h2>
+
+<form #productForm="ngForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="Nombre" name="nombre" [(ngModel)]="product.nombre" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput placeholder="Descripción" name="descripcion" [(ngModel)]="product.descripcion"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type
+    ="number" placeholder="Precio" name="precio" [(ngModel)]="product.precio" required>
+</mat-form-field>
+
+<button mat-raised-button color="primary" type="submit">Guardar Cambios</button>
+</form>
+
+<button mat-raised-button color="warn" (click)="deleteProduct()">Eliminar Producto</button>
+<button mat-raised-button color="accent" routerLink="/products">Cancelar</button>

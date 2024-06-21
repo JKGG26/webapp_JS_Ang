@@ -1,0 +1,10 @@
+<h2>Detalles del Producto</h2>
+
+<div *ngIf="product">
+  <p><strong>Nombre:</strong> {{ product.nombre }}</p>
+  <p><strong>Descripción:</strong> {{ product.descripcion }}</p>
+  <p><strong>Precio:</strong> {{ product.precio }}</p>
+  <p><strong>Stock:</strong> {{ product.stock }}</p>
+</div>
+
+<button mat-raised-button color="primary" routerLink="/products">Volver</button>
