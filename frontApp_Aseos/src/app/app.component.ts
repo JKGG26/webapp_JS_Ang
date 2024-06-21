@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  standalone: true
 })
 export class AppComponent {
-  title = 'frontApp_Aseos';
+  title = 'Angular 10 Spring Boot CRUD Full Stack App';
 }
