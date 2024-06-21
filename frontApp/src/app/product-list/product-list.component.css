@@ -1,0 +1,42 @@
+.table caption {
+    font-size: 1.2em; /* Tamaño de fuente más grande para el título */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alineación al centro */
+    caption-side: top; /* Posición del título en la parte superior */
+    background-color: #f2f2f2; /* Fondo gris claro para el título */
+    border-bottom: 1px solid #ddd; /* Borde inferior del título */
+}
+
+.table-container {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    width: 80%; /* Ancho de la tabla */
+    max-width: 800px; /* Ancho máximo para mantener la legibilidad */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto de elevación */
+}
+
+.table {
+    width: 100%;
+    text-align: left; /* Alineación del texto a la izquierda en las celdas */
+}
+
+.table th,
+.table td {
+    padding: 12px 15px; /* Espaciado interno de las celdas */
+    text-align: center; /* Alineación del texto al centro en las celdas */
+    border-bottom: 1px solid #ddd; /* Borde inferior delgado en las filas */
+}
+
+.table th {
+    background-color: #f2f2f2; /* Fondo gris claro para las cabeceras */
+    font-weight: bold; /* Texto en negrita para las cabeceras */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro alternativo para filas pares */
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef; /* Cambio de color al pasar el mouse */
+}
