@@ -1,3 +1,12 @@
+.tittle {
+    font-size: 1.5em; /* Tamaño de fuente más grande para el título */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Alineación al centro */
+    caption-side: top; /* Posición del título en la parte superior */
+    background-color: #f2f2f2; /* Fondo gris claro para el título */
+    border-bottom: 1px solid #ddd; /* Borde inferior del título */
+}
+
 .table caption {
     font-size: 1.2em; /* Tamaño de fuente más grande para el título */
     font-weight: bold; /* Texto en negrita */
