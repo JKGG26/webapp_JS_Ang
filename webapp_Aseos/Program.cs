@@ -15,6 +15,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configure CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:4200") // Reemplaza con el puerto donde corre Angular
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 // Build the application.
 var app = builder.Build();
 
@@ -25,6 +37,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapp_Aseos v1"));
 }
+
+// Use CORS
+app.UseCors("AllowLocalhost");
 
 app.UseHttpsRedirection();
 
