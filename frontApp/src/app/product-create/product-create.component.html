@@ -1,1 +1,52 @@
-<p>product-create works!</p>
+<h1 class="tittle">Crear Producto</h1>
+<div class="form-container">
+    <div class="data-input">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="nameValue">
+    </div>
+    <div class="data-input">
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description" [(ngModel)]="descriptionValue">
+    </div>
+    <div class="data-input">
+        <label for="price">Precio:</label>
+        <input type="number" id="price" name="price" [(ngModel)]="priceValue">
+    </div>
+    <div class="data-input">
+        <label for="stock">Stock:</label>
+        <input type="number" id="stock" name="stock" [(ngModel)]="stockValue">
+    </div>
+</div>
+
+<div class="table-container">
+    <div class="number-input">
+        <label for="number">Ingrese el Id del Producto a revisar:</label>
+        <input type="number" id="number" name="number" [(ngModel)]="numberValue">
+        <div class="button-container">
+            <button (click)="sendNumber()">Ver</button>
+            <button (click)="createProduct()">Crear</button>
+            <button (click)="delProduct()">Borrar</button>
+        </div>
+    </div>
+    <table class="table">
+        <caption>Detalles del Producto</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{ item.id }}</td>
+                <td>{{ item.nombre }}</td>
+                <td>{{ item.descripcion }}</td>
+                <td>{{ item.precio | currency:'USD':'symbol':'1.2-2' }}</td>
+                <td>{{ item.stock }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
