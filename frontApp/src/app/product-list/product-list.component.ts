@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductListComponent implements OnInit{
   data: any = [];
+  mostrarBotones: boolean = false;
   //data = this.productListService.getProductsList();
 
   constructor(private productListService: ProductListService){}
