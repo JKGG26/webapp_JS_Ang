@@ -3,7 +3,9 @@
     <div class="number-input">
         <label for="number">Ingrese el Id del Producto a revisar:</label>
         <input type="number" id="number" name="number" [(ngModel)]="numberValue">
-        <button (click)="sendNumber()">Enviar</button>
+        <div class="button-container">
+            <button (click)="sendNumber()">Ver</button>
+        </div>
     </div>
     <table class="table">
         <caption>Detalles del Producto</caption>
