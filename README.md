@@ -22,12 +22,13 @@ Un sistema CRUD (Create, Read, Update, Delete) para gestionar información de pr
 3. Instalar las dependencias del backend: `cd webapp_Aseos && dotnet restore`
 4. Asegurarse de que el paquete de CORS está instalado: `dotnet add package Microsoft.AspNetCore.Cors` 
 5. Instalar las dependencias del frontend: `cd ../frontApp && npm install`
+6. Verificar que el archivo `appsettings.json` en la carpeta `webapp_Aseos` tiene la cadena de conexión correcta a la base de datos. Debería verse así: "DefaultConnection": "Server=localhost\\SQLEXPRESS;Database=AseoParaElMundoDB;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true"
   
 ## Configuración de la base de datos  
   
 1. Abrir SQL Server Management Studio.  
 2. Conectarse a la instancia de SQL Server Express.  
-3. Ejecutar el script SQL proporcionado para crear la base de datos, la tabla y los datos de prueba. El script se encuentra en el archivo `create_db_table.sql` en la raíz del repositorio.  
+3. Ejecutar el script SQL proporcionado para crear la base de datos, la tabla y los datos de prueba siguiendo las instrucciones en los comentarios del archivo. El script se encuentra en el archivo `create_db_table.sql` en la raíz del repositorio.
   
 ## Ejecución del proyecto  
   
