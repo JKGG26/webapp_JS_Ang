@@ -9,13 +9,15 @@ label {
 .label-field {
     font-family: Tahoma;
     font-weight: bold;
+    font-size: 14px;
     margin: 10px;
     background-color: #ccc;
     color: #1a252f; /* Text Color */
     border-radius: 5px; /* Rounded corners */
+    width: 70px;
 }
 
-.input-id-container {
+.input-container {
     display: flex;
     justify-content: center;
 }
@@ -27,7 +29,7 @@ input {
     padding: 10px 10px; /* Padding inside the input */
     margin: 10px; /* Margin around the input */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
-    font-size: 16px; /* Font size */
+    font-size: 14px; /* Font size */
     border: 1px solid #ccc; /* Border color */
     border-radius: 5px; /* Rounded corners */
     background-color: #f8f9fa; /* Background color */
@@ -35,14 +37,12 @@ input {
     font-family: Tahoma;
 }
 
-.show-controls-container {
-    padding: 10px 10px;
-    flex-direction: column;
+.show-controls-container, .edit-controls-container {
+    padding-top: 15px;
     justify-content: center;
-    width: 85%;
 }
 
-.show-buttons-container {
+.buttons-container {
     display: flex;
     justify-content: center;
 }
@@ -50,13 +50,28 @@ input {
 .crud-container {
     background-color: #607f97; /* Light gray background color */
     border-radius: 10px; /* Rounded corners */
-    height: 200px;
+    min-height: 400px;
+    max-height: fit-content;
     display: flex; /* Use Flexbox */
     justify-content: center; /* Center horizontally */
     width: 100%;
 }
-/* Basic Button Styles */
 .button {
+    background-color: #34495e; /* Primary Color */
+    color: #fff; /* Text Color */
+}
+
+.button-mode {
+    background-color:#2d8fbd; /* Primary Color */
+    color:#fff; /* Text Color */
+}
+
+.button-del {
+    background-color:#db3434; /* Primary Color */
+    color:#fff; /* Text Color */
+}
+/* Basic Button Styles */
+.button, .button-mode, .button-del {
     display: inline-block;
     padding: 10px 20px;
     font-size: 14px;
@@ -66,11 +81,9 @@ input {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #34495e; /* Primary Color */
-    color: #fff; /* Text Color */
     transition: background-color 0.3s, color 0.3s;
-    margin: 10px;
-    width: 50%;
+    margin: 5px;
+    width: 28%;
 }
 
 /* Default Button Style */
@@ -80,19 +93,23 @@ input {
 }
 
 /* Hover Effect */
-.button:hover {
-    background-color: #2980b9; /* Darker shade of primary color */
-    color: #fff; /* Text Color */
+.button:hover, .button-mode:hover, .button-del:hover {
+    background-color: #ccc; /* Darker shade of primary color */
+    color:#1a252f; /* Text Color */
 }
 
 /* Active State */
-.button:active {
+.button:active, .button-mode:active, .button-del:active {
     transform: translateY(1px);
 }
 
 /* Disabled State */
 .button.disabled,
-.button:disabled {
+.button:disabled,
+.button-mode.disabled,
+.button-mode:disabled,
+.button-del.disabled,
+.button-del:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }

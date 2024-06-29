@@ -16,6 +16,10 @@ import { ProductsService } from '../../products.service';
 export class ProductsCrudPanelComponent implements OnInit {
 
   idValue: number = 0;
+  nameValue: string = '';
+  descriptionValue: string = '';
+  priceValue: number = 0;
+  stockValue: number = 0;
 
   constructor(private productsService: ProductsService) {}
 
@@ -23,11 +27,31 @@ export class ProductsCrudPanelComponent implements OnInit {
     this.show_products();
   }
 
+  show_product() {
+    this.productsService.get_product(this.idValue);
+  }
+
   show_products() {
     this.productsService.get_products();  
   }
 
-  show_product() {
-    this.productsService.get_product(this.idValue);
+  delete_product() {
+    
+  }
+
+  edit_product() {
+
+  }
+
+  create_product() {
+    
+  }
+
+  clean_inputs() {
+    this.idValue = 0;
+    this.nameValue = '';
+    this.descriptionValue = '';
+    this.priceValue = 0;
+    this.stockValue = 0;
   }
 }
