@@ -1,5 +1,7 @@
 <div class="layout-container">
-  <app-header></app-header>
+  <div class="header-container">
+    <app-header></app-header>
+  </div>
   <nav class="navbar">
     <ul>
       <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
@@ -8,6 +10,8 @@
   </nav>
   <div class="content">
     <router-outlet></router-outlet>
+    <div class="footer-container">
+      <app-footer></app-footer>
+    </div>
   </div>
-  <app-footer></app-footer>
 </div>
