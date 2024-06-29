@@ -59,6 +59,16 @@ export class ProductsService {
       });
   }
 
+  edit_product(id: number, json_data: any) {
+    this.http.put(`${this.backend_url}/Productos/${id}`, json_data).subscribe(
+      response => {
+        console.log('Product created successfully')
+      },
+      error => {
+        console.log('Error:', error)
+      });
+  }
+
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       // Error del lado del cliente

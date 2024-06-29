@@ -40,7 +40,14 @@ export class ProductsCrudPanelComponent implements OnInit {
   }
 
   edit_product() {
-
+    let jsonData = {
+      'id': this.idValue,
+      'nombre': this.nameValue,
+      'descripcion': this.descriptionValue,
+      'precio': this.priceValue,
+      'stock': this.stockValue
+    };
+    this.productsService.edit_product(this.idValue, jsonData)
   }
 
   create_product() {
