@@ -49,6 +49,16 @@ export class ProductsService {
       });
   }
 
+  delete_product(id: number) {
+    this.http.delete(`${this.backend_url}/Productos/${id}`).subscribe(
+      response => {
+        console.log('Product deleted successfully')
+      },
+      error => {
+        console.log('Error:', error)
+      });
+  }
+
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       // Error del lado del cliente

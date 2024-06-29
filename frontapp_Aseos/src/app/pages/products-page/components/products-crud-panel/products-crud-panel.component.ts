@@ -36,7 +36,7 @@ export class ProductsCrudPanelComponent implements OnInit {
   }
 
   delete_product() {
-    
+    this.productsService.delete_product(this.idValue)
   }
 
   edit_product() {
