@@ -1,0 +1,45 @@
+/* Basic table styles */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+/* Table header styles */
+.styled-table thead tr {
+    background-color: #34495e; /* Header background color */
+    color: #ecf0f1; /* Header text color */
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Table cell padding */
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+/* Table row styles */
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Table row hover effect */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #2E86C1; /* Bottom border color */
+}
+
+/* Active row styles */
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #2E86C1; /* Active row text color */
+}
