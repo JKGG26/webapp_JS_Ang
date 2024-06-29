@@ -1,0 +1,17 @@
+.header {
+    background-color: #f2f2f2; /* Optional: Background color for header */
+    padding: 20px 0; /* Optional: Adjust padding as needed */
+}
+
+.container {
+    max-width: 1200px; /* Optional: Set maximum width for content */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Optional: Add padding for layout */
+}
+
+.table-container {
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    max-height: 600px; /* Example: Set maximum height to contain content */
+    padding: 20px; /* Optional: Add padding around the table */
+    border: 1px solid #ccc; /* Optional: Add border for visualization */
+}

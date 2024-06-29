@@ -1,16 +1,42 @@
-/* Reset some basic elements */
-body, ul {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; /* Recommended font */
+layout-container {
+    width: 100%;
+    max-width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+app-header {
+    position: fixed;  
+    top: 0;  
+    width: 100%;  
+    z-index: 1;
+    max-width: 100%;
+}  
+    
+app-footer {  
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;  
+    z-index: 1;
+    max-width: 100%;
+}
+
+.content {  
+    /*padding-top: 20px; /* Ajustar según la altura del encabezado */  
+    padding-bottom: 100px; /* Ajustar según la altura del pie */  
+    align-items: center;
+    text-align: center;
 }
 
 /* Navigation bar container */
 .navbar {
     background-color: #34495e; /* Primary Color */
+    overflow: auto;
     padding: 10px 20px;
+    padding-top: 120px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Navigation bar links styled as buttons */
@@ -24,7 +50,7 @@ body, ul {
     margin: 0 5px;
     transition: background-color 0.3s, transform 0.3s;
     font-weight: bold; /* Making text bold */
-    /*text-transform: uppercase; /* Uppercase text */
+    text-transform: uppercase; /* Uppercase text */
 }
 
 /* Hover effect for links */

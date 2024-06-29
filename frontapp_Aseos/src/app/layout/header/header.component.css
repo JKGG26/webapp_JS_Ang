@@ -3,6 +3,8 @@
     color: #EAF2F8; /* Text Color */
     padding: 20px 0;
     text-align: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .header h1 {
