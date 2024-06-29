@@ -44,7 +44,15 @@ export class ProductsCrudPanelComponent implements OnInit {
   }
 
   create_product() {
-    
+    // Crea un objeto con los valores de los inputs  
+    let jsonData = {
+      'nombre': this.nameValue,
+      'descripcion': this.descriptionValue,
+      'precio': this.priceValue,
+      'stock': this.stockValue
+    };
+
+    this.productsService.create_product(jsonData)
   }
 
   clean_inputs() {

@@ -39,6 +39,16 @@ export class ProductsService {
     });
   }
 
+  create_product(json_data: any) {
+    this.http.post(`${this.backend_url}/Productos`, json_data).subscribe(
+      response => {
+        console.log('Product created successfully')
+      },
+      error => {
+        console.log('Error:', error)
+      });
+  }
+
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       // Error del lado del cliente
