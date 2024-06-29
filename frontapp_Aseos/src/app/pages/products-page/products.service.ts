@@ -10,19 +10,23 @@ export class ProductsService {
 
   private backend_url = 'http://localhost:5235/api'
 
-  //private data_table = new BehaviorSubject<any[]>([]);
-  //current_data_table = this.data_table.asObservable();
+  private data_table = new BehaviorSubject<any[]>([]);
+  current_data_table = this.data_table.asObservable();
 
   constructor(private http: HttpClient) {}
 
+  set_data_table()
+  {
+    this.get_products().subscribe(data_table => {
+      this.data_table.next(data_table);
+    });
+  }
   // Get list of products from SQL Server DB
   get_products()
   {
     return this.http.get<any[]>(`${this.backend_url}/Productos`).pipe(
       catchError(this.handleError)
-    );//.subscribe(data_table => {
-      //this.data_table.next(data_table);
-    //});
+    );
   }
 
   private handleError(error: HttpErrorResponse) {

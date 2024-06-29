@@ -14,11 +14,16 @@ export class ProductsTableComponent implements OnInit {
   data: any = [];
 
   constructor(private productsService: ProductsService) {}
-
+  // ngOnInit(){
+  //   this.productsService.get_products().subscribe(data => {
+  //     this.data = data;
+  //   }
+  // ); 
+  // }
   ngOnInit(){
-    this.productsService.get_products().subscribe(data => {
-      this.data = data;
-    }
-  ); 
+    console.log('HERE')
+    this.productsService.current_data_table.subscribe(data => {
+      this.data = data
+    });
   }
 }
