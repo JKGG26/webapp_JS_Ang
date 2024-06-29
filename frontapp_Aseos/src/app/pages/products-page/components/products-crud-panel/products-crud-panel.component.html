@@ -1,3 +1,13 @@
 <div class="crud-container">
-    <button class="button" (click)="show_products()">All Products</button>      
+    <div class="show-controls-container">
+        <label for="number">Display Products</label>
+        <div class="input-id-container">
+            <label class="label-field">ID</label>
+            <input type="number" id="number" name="number" [(ngModel)]="idValue">
+        </div>
+        <div class="show-buttons-container">
+            <button class="button" (click)="show_products()">All Products</button>
+            <button class="button" (click)="show_product()">Get Product</button>
+        </div>
+    </div>
 </div>

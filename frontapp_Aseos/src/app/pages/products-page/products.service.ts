@@ -15,18 +15,28 @@ export class ProductsService {
 
   constructor(private http: HttpClient) {}
 
-  set_data_table()
-  {
-    this.get_products().subscribe(data_table => {
-      this.data_table.next(data_table);
-    });
-  }
+  // set_data_table()
+  // {
+  //   this.get_products().subscribe(data_table => {
+  //     this.data_table.next(data_table);
+  //   });
+  // }
   // Get list of products from SQL Server DB
   get_products()
   {
-    return this.http.get<any[]>(`${this.backend_url}/Productos`).pipe(
+    this.http.get<any[]>(`${this.backend_url}/Productos`).pipe(
       catchError(this.handleError)
-    );
+    ).subscribe(data_table => {
+      this.data_table.next(data_table);
+    });
+  }
+
+  get_product(id: number) {
+    return this.http.get<any>(`${this.backend_url}/Productos/${id}`).pipe(
+      catchError(this.handleError)
+    ).subscribe(data_table => {
+      this.data_table.next([data_table]);
+    });
   }
 
   private handleError(error: HttpErrorResponse) {
