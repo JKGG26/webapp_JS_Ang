@@ -1,0 +1,33 @@
+.header {
+    background-color: #f2f2f2; /* Optional: Background color for header */
+    padding-bottom: 20px; /* Optional: Adjust padding as needed */
+    min-height: 80%;
+}
+
+h1 {
+    font-family: Tahoma;
+    font-size: 1.75em;
+}
+
+.container {
+    max-width: 1200px; /* Optional: Set maximum width for content */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    /*padding: 0 20px; /* Optional: Add padding for layout */
+}
+
+.crud-panel-container {
+    width: 30%;
+    max-width: 30%;
+    margin: 10px;
+}
+
+.table-container {
+    border-radius: 10px; /* Rounded corners */
+    width: 70%;
+    max-width: 70%;
+    max-height: 600px; /* Example: Set maximum height to contain content */
+    /*padding: 20px; /* Optional: Add padding around the table */
+    border: 1px solid #ccc; /* Optional: Add border for visualization */
+    overflow-y: auto;
+}

@@ -1,0 +1,13 @@
+.header {
+    min-height: 80%;
+}
+
+h1 {
+    font-family: Tahoma;
+}
+
+img {
+    width: 25%; /* Set the desired width */
+    height: 25%; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+}  

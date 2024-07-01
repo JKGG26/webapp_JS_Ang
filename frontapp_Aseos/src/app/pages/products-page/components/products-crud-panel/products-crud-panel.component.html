@@ -1,0 +1,39 @@
+<div class="crud-container">
+    <div class="control-container">
+        <div class="show-controls-container">
+            <label for="number">CRUD Controls</label>
+            <div class="input-container">
+                <label class="label-field">ID</label>
+                <input type="number" id="number" name="number" [(ngModel)]="idValue">
+            </div>
+            <div class="buttons-container">
+                <button class="button" (click)="show_product()">Get</button>
+                <button class="button" (click)="edit_product()">Edit</button>
+                <button class="button" (click)="create_product()">Create</button>
+            </div>
+            <div class="buttons-container">
+                <button class="button-mode" (click)="show_products()">See All</button>
+                <button class="button-del" (click)="delete_product()">Delete</button>
+                <button class="button-mode" (click)="clean_inputs()">Clean</button>
+            </div>
+        </div>
+        <div class="edit-controls-container">
+            <div class="input-container">
+                <label class="label-field">Name</label>
+                <input type="text" id="name" name="name" [(ngModel)]="nameValue">
+            </div>
+            <div class="input-container">
+                <label class="label-field">Descrip</label>
+                <input type="text" id="description" name="description" [(ngModel)]="descriptionValue">
+            </div>
+            <div class="input-container">
+                <label class="label-field">Price</label>
+                <input type="number" id="price" name="price" [(ngModel)]="priceValue">
+            </div>
+            <div class="input-container">
+                <label class="label-field">Stock</label>
+                <input type="number" id="stock" name="stock" [(ngModel)]="stockValue">
+            </div>
+        </div>
+    </div>
+</div>

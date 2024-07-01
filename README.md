@@ -1,6 +1,7 @@
 # ASEO PARA EL MUNDO SAS - SQL CRUD WEBAPP  
   
 Un sistema CRUD (Create, Read, Update, Delete) para gestionar información de productos para ASEO PARA EL MUNDO SAS. Desarrollado utilizando Angular para el frontend y .NET Core para el backend, con una base de datos SQL Server para almacenar los datos.
+
 ![home](data/images/App-Screenshots/home.PNG)
 
 ## Tecnologías  
@@ -40,22 +41,24 @@ Un sistema CRUD (Create, Read, Update, Delete) para gestionar información de pr
 
 ## Uso de la aplicación  
   
-Al abrir la aplicación, serás redirigido a la página de inicio. En la parte superior de la página, hay una barra de navegación con un botón de inicio, y en medio de la pantalla encontrarás 4 con botones que redirigen a diferentes secciones de la aplicación:
-  
-- **Ver Productos:** Al hacer clic en este botón, serás redirigido a una página que muestra una tabla con todos los productos en la base de datos.
-![AllProducts](data/images/App-Screenshots/AllProducts.PNG)
-  
-- **Ver Detalles:** Esta sección incluye un cuadro de texto donde puedes ingresar el ID de un producto. Al hacer clic en el botón "Ver", la aplicación mostrará los detalles del producto correspondiente en una tabla.
-![SeeProduct](data/images/App-Screenshots/SeeProduct.PNG)
-  
-- **Crear/Borrar Producto:** En esta sección puedes crear un nuevo producto o borrar uno existente. Para crear un nuevo producto, introduce los detalles del producto (nombre, descripción, precio y stock) en los cuadros de texto correspondientes y haz clic en "Crear". Para borrar un producto, introduce el ID del producto en el cuadro de texto para Id y haz clic en "Borrar". También puedes visualizar los detalles de un producto antes de borrarlo haciendo clic en "Ver".
-![CreateDeleteProduct](data/images/App-Screenshots/CreateDeleteProduct.PNG)
+Al abrir la aplicación, serás redirigido a la página de inicio con una imagen en el centro de la pantalla. En la parte superior de la página, hay una barra de navegación con un botón de 'Home' y 'Products' que redirige a la página donde se encuentran las funcionalidades CRUD de la aplicación para la base de datos SQL Server asociada:
 
-- **Editar Producto:** Aquí puedes editar los detalles de un producto existente. Introduce el ID del producto en el cuadro de texto, luego introduce los nuevos detalles en los cuadros de texto correspondientes y haz clic en "Editar". También puedes visualizar los detalles de un producto antes de editarlo haciendo clic en "Ver".
-![EditProduct](data/images/App-Screenshots/EditProduct.PNG)
+![ProductsPage](data/images/App-Screenshots/ProductsPage.PNG)
 
-Recuerda que siempre puedes volver a la página de inicio haciendo clic en "Inicio" en la barra de navegación.
+La página 'Products' consta de 2 secciones: El panel de control y la vista de tabla.
   
-## Contacto  
+- **Ver Todos los Productos:** Al ingresar a la página, inmediatamente todos los productos de la base de datos son cargados en la tabla de la derecha. También, si se ha aplicado alguna operación que cambiara la información mostrada en la tabla, se puede hacer click sobre el botón 'See All' para mostrar todos los productos actualizados de la base de datos en la tabla.
   
+- **Ver Detalles:** Para ver los detalles de un único producto en la tabla, se puede ingresar el id (Mayor a cero 0) del producto a revisar y hacer click sobre el botón 'Get'.
+  
+- **Editar Producto:** Para editar/actualizar la información de un producto, se debe ingresar el id en el campo de texto 'ID' y llenar los datos del producto en los demás campos 'Name', 'Description', 'Price' y 'Stock' respectivamente y hacer click sobre 'Edit'. Finalmente, puede ingresar el 'id' del producto que se acaba de actualizar y darle al botón 'Get' para validar la información actualizada.
+
+- **Crear Producto:** Para crear o agregar un producto en la base de datos, se debe llenar los datos del producto en los campos 'Name', 'Description', 'Price' y 'Stock' respectivamente y hacer click sobre 'Create' (El id no es necesario ingresar porque la base de datos lo asigna automáticamente). Finalmente, se puede hacer click en 'See All' y buscar el producto creado al final de la tabla.
+
+- **Eliminar Producto:** Para eliminar un producto de la base de datos, se puede ingresar el id (Mayor a cero 0) del producto a revisar y hacer click sobre el botón 'Delete'.
+
+- **Clear:** Adicionalmente, el panel de control tiene un botón 'Clear' que limpia los campos de entrada de texto.
+
+## Contacto
+
 Si tienes preguntas o encuentras algún problema con la aplicación, no dudes en contactar a jgonzalez202303@gmail.com.
