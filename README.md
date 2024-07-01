@@ -1,6 +1,7 @@
 # ASEO PARA EL MUNDO SAS - SQL CRUD WEBAPP  
   
-Un sistema CRUD (Create, Read, Update, Delete) para gestionar información de productos para ASEO PARA EL MUNDO SAS. Desarrollado utilizando Angular para el frontend y .NET Core para el backend, con una base de datos SQL Server para almacenar los datos.  
+Un sistema CRUD (Create, Read, Update, Delete) para gestionar información de productos para ASEO PARA EL MUNDO SAS. Desarrollado utilizando Angular para el frontend y .NET Core para el backend, con una base de datos SQL Server para almacenar los datos.
+![home](data/images/App-Screenshots/home.PNG)
 
 ## Tecnologías  
   
@@ -41,14 +42,18 @@ Un sistema CRUD (Create, Read, Update, Delete) para gestionar información de pr
   
 Al abrir la aplicación, serás redirigido a la página de inicio. En la parte superior de la página, hay una barra de navegación con un botón de inicio, y en medio de la pantalla encontrarás 4 con botones que redirigen a diferentes secciones de la aplicación:
   
-- **Ver Productos:** Al hacer clic en este botón, serás redirigido a una página que muestra una tabla con todos los productos en la base de datos.  
+- **Ver Productos:** Al hacer clic en este botón, serás redirigido a una página que muestra una tabla con todos los productos en la base de datos.
+![AllProducts](data/images/App-Screenshots/AllProducts.PNG)
   
-- **Ver Detalles:** Esta sección incluye un cuadro de texto donde puedes ingresar el ID de un producto. Al hacer clic en el botón "Ver", la aplicación mostrará los detalles del producto correspondiente en una tabla.  
+- **Ver Detalles:** Esta sección incluye un cuadro de texto donde puedes ingresar el ID de un producto. Al hacer clic en el botón "Ver", la aplicación mostrará los detalles del producto correspondiente en una tabla.
+![SeeProduct](data/images/App-Screenshots/SeeProduct.PNG)
   
-- **Crear/Borrar Producto:** En esta sección puedes crear un nuevo producto o borrar uno existente. Para crear un nuevo producto, introduce los detalles del producto (nombre, descripción, precio y stock) en los cuadros de texto correspondientes y haz clic en "Crear". Para borrar un producto, introduce el ID del producto en el cuadro de texto para Id y haz clic en "Borrar". También puedes visualizar los detalles de un producto antes de borrarlo haciendo clic en "Ver".  
-  
-- **Editar Producto:** Aquí puedes editar los detalles de un producto existente. Introduce el ID del producto en el cuadro de texto, luego introduce los nuevos detalles en los cuadros de texto correspondientes y haz clic en "Editar". También puedes visualizar los detalles de un producto antes de editarlo haciendo clic en "Ver".  
-  
+- **Crear/Borrar Producto:** En esta sección puedes crear un nuevo producto o borrar uno existente. Para crear un nuevo producto, introduce los detalles del producto (nombre, descripción, precio y stock) en los cuadros de texto correspondientes y haz clic en "Crear". Para borrar un producto, introduce el ID del producto en el cuadro de texto para Id y haz clic en "Borrar". También puedes visualizar los detalles de un producto antes de borrarlo haciendo clic en "Ver".
+![CreateDeleteProduct](data/images/App-Screenshots/CreateDeleteProduct.PNG)
+
+- **Editar Producto:** Aquí puedes editar los detalles de un producto existente. Introduce el ID del producto en el cuadro de texto, luego introduce los nuevos detalles en los cuadros de texto correspondientes y haz clic en "Editar". También puedes visualizar los detalles de un producto antes de editarlo haciendo clic en "Ver".
+![EditProduct](data/images/App-Screenshots/EditProduct.PNG)
+
 Recuerda que siempre puedes volver a la página de inicio haciendo clic en "Inicio" en la barra de navegación.
   
 ## Contacto  
